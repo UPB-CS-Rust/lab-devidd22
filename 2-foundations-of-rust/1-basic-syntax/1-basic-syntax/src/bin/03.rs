@@ -4,7 +4,7 @@ fn main() {
     // TODO
     let mut valoare_maxima = input[0];
     let mut valoare_minima = input[0];
-    for i in 1..7 {
+    for i in 1..input.len() {
         if input[i] > valoare_maxima {
             valoare_maxima = input[i];
         }
