@@ -3,9 +3,9 @@
 fn main() {
     let s0 = String::new();
 
-    let mut s1 = append_to_string(s0);
+    println!("{} == `{}`", stringify!(s0), s0);
 
-    println!("{} == `{}`", stringify!(s1), s1);
+    let mut s1 = append_to_string(s0);
 
     s1.push('!');
 
@@ -13,6 +13,7 @@ fn main() {
 }
 
 fn append_to_string(s: String) -> String {
+    let mut s = s;
     s.push_str("Hello World");
 
     s
